@@ -1,0 +1,2 @@
+Encode:UTF-8(BOMなし),改行コードCRLF,ABCabc012
+こんにちは！このテキストはPRM-Giken.Github.ioから取得されました！
