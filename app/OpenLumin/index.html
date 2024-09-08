@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Lumin Web Browser</title>
+    <style>
+        /* 全体のスタイル */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* ヘッダー部分のスタイル */
+        .header {
+            height: 100vh;
+            background: url('Theme.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        /* ヘッダーテキストのスタイル */
+        .header h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* スクロールボタン */
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            animation: bounce 2s infinite;
+        }
+
+        /* ボタンのアニメーション */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        /* コンテンツ部分のスタイル */
+        .content {
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* ボタンスタイル */
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="header">
+        <h1>Open Lumin WebBrowser</h1>
+        <div class="scroll-down" onclick="scrollToContent()">&#x2193;</div>
+    </section>
+
+    <section class="content" id="content">
+        <h2>軽量・多機能・オープンソース</h2>
+        <p>Open Lumin WebBrowser は、<a href="https://hsp.tv">HSP3</a>製WebViewブラウザです。<br>オープンソースブラウザで、軽快なパフォーマンスと洗練されたインターフェースで、ウェブの新しい可能性を引き出します。</p>
+        <h2>プライバシー</h2>
+        <p>私たちは一切のデータを収集しません。</p>
+        <h2>国産</h2>
+        <p>HSP言語も、制作陣も準日本製。</p>
+        <a href="#download" class="cta-button">今すぐダウンロード(準備中)</a>
+        <a href="https://github.com/PRM-Giken/Open-Lumin-Browser" class="cta-button">ソースコードを閲覧</a>
+        <br><br><br>
+        <p>2024 PRM技研.<br>Open Lumin WebBrowserは<a href="https://abatbeliever.net/InternetStroller/">Internet Stroller Memoria</a>ベースです。</p>
+    </section>
+
+    <script>
+        function scrollToContent() {
+            document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
