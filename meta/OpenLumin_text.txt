@@ -1,1 +1,0 @@
-PRM技研通信は、インターネットのPRM公式サイトからテキストを受信する仕組みです@@https://prm-giken.github.io/meta/OpenLumin_text.txt
